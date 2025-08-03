@@ -1,0 +1,408 @@
+input {
+  jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM bfm_reading;"
+    schedule => "* * * * *" 
+    tags => ["Bfm_Reading"]
+  }
+
+
+  jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM contact_master;"
+    schedule => "* * * * *" 
+    tags => ["Contact_Master"]
+
+  }
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM bfm_reading_old;"
+    schedule => "* * * * *" 
+    tags => ["Bfm_Old"]
+
+  }
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM contact_type_master;"
+    schedule => "* * * * *" 
+    tags => ["Contact_Type"]
+
+  }
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM location_master;"
+    schedule => "* * * * *"  
+    tags => ["Loc_Master"]
+
+  }
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM location_type_master;"
+    schedule => "* * * * *" 
+    tags => ["Loc_Type"]
+
+  }
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM scheme_contact_mapping;"
+    schedule => "* * * * *" 
+    tags => ["Scheme-contact-mapping"]
+
+  }
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true        jdbc_connection_string => useSSL=true        jdbc_connection_string => requireSSL=true        jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12        jdbc_connection_string => clientCertificateKeyStorePassword=log123        jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM scheme_master;"
+    schedule => "* * * * *"  
+    tags => ["Scheme_Master"]
+
+  }
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM scheme_type_master;"
+    schedule => "* * * * *" 
+    tags => ["Scheme_Type"]
+
+  }
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM bfm_analytics;"
+    schedule => "* * * * *" 
+    tags => ["Bfm-Analytics"]
+
+  }
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM nudge_contact;"
+    schedule => "* * * * *" 
+    tags => ["Nudge-Contact"]
+
+  }
+
+
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM schemes;"
+    schedule => "* * * * *" 
+    tags => ["Scheme-Details"]
+
+  }
+
+
+
+
+
+jdbc {
+    jdbc_driver_library => "/opt/homebrew/opt/logstash/libexec/logstash-core/lib/jars/mysql-connector-j-9.3.0.jar"
+    jdbc_driver_class => "com.mysql.cj.jdbc.Driver"
+    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"useSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"requireSSL=true    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStorePassword=log123    jdbc_connection_string => "jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true    jdbc_connection_string => useSSL=true    jdbc_connection_string => requireSSL=true    jdbc_connection_string => clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12    jdbc_connection_string => clientCertificateKeyStorePassword=log123    jdbc_connection_string => clientCertificateKeyStoreType=PKCS12"clientCertificateKeyStoreType=PKCS12"
+"jdbc:mysql://34.47.249.46:3306/bfm-db?verifyServerCertificate=true&useSSL=true&requireSSL=true&clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStorePassword=log123clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12clientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStorePassword=YOUR_PASSWORDclientCertificateKeyStoreUrl=file:/Users/vanshika/gcp-certs/client-keystore.p12&clientCertificateKeyStorePassword=sq1234"clientCertificateKeyStoreType=PKCS12clientCertificateKeyStoreType=PKCS12
+
+    jdbc_user => "bfm-admin"
+    jdbc_password => "Y,1XAB?-E*+y>8A("
+    statement => "SELECT * FROM water_flow_analysis;"
+    schedule => "* * * * *" 
+    tags => ["Water-Flow"]
+
+  }
+
+
+
+}
+
+output {
+  if "Bfm_Reading" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "bfm_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+         ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+  if "Contact_Master" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "contact_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+         ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+
+    }
+  }
+
+
+ if "Bfm_Old" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "bfm_old_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+         ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+    }
+  }
+
+  if "Contact_Type" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "contact_type_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+             ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+
+    }
+  }
+
+
+ if "Loc_Master" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "loc_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+  if "Loc_Type" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "loc_type_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+
+ if "Scheme-contact-mapping" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "scheme_Con_mapping_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+    }
+  }
+
+  if "Scheme_Master" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "scheme_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+
+
+ if "Scheme_Type" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "scheme_type_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+  if "Bfm-Analytics" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "bfm_details_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+if "Nudge-Contact" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "nudge_contact_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+
+if "Scheme-Details" in [tags] {
+    elasticsearch {
+      hosts => ["https://localhost:9200"]
+      index => "scheme_details_data"
+      user => "elastic"
+      password => "12LGpmpaoXywFrYM-doF"
+              ssl_enabled => true           
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+
+    }
+  }
+
+	if "Water-Flow" in [tags] {
+        elasticsearch {
+        hosts => ["https://localhost:9200"]
+        index => "water_flow_data"
+        user => "elastic"
+        password => "12LGpmpaoXywFrYM-doF"
+        ssl_enabled => true
+        ssl_certificate_authorities => ["/Users/vanshika/Kibana/elasticsearch-9.0.2/config/certs/http_ca.crt"]
+  ssl_verification_mode => "none"
+
+
+    }
+  }
+
+stdout { codec => json_lines }
+}
